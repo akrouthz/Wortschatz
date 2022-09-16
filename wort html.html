@@ -1,0 +1,97 @@
+<html>
+ <DOCTYPE html>
+    <html lang="en">
+         <head>
+         <meta charset="utf-8"/> 
+         <title>Wortschatz</title> 
+         <link rel="stylesheet" href="wort css.css">
+         <script src="wort js.js"> </script>   
+   
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script>
+function ajtfu(){
+if(sessionStorage.getItem(0).length === 0){
+     sessionStorage.setItem(0 , document.getElementById("ajt").value);
+     sessionStorage.setItem(1 , document.getElementById("ajt1").value);
+}
+else if(sessionStorage.getItem(2).length === 0){
+     sessionStorage.setItem(2 , document.getElementById("ajt").value);
+     sessionStorage.setItem(3 , document.getElementById("ajt1").value);
+}
+else if(sessionStorage.getItem(4).length === 0){
+     sessionStorage.setItem(4 , document.getElementById("ajt").value);
+     sessionStorage.setItem(5 , document.getElementById("ajt1").value);
+}
+else if(sessionStorage.getItem(6).length === 0){
+     sessionStorage.setItem(6 , document.getElementById("ajt").value);
+     sessionStorage.setItem(7 , document.getElementById("ajt1").value);
+}
+else if(sessionStorage.getItem(8).length === 0){
+     sessionStorage.setItem(8 , document.getElementById("ajt").value);
+     sessionStorage.setItem(9 , document.getElementById("ajt1").value);
+}
+else if(sessionStorage.getItem(10).length === 0){
+     sessionStorage.setItem(10 , document.getElementById("ajt").value);
+     sessionStorage.setItem(11 , document.getElementById("ajt1").value);
+}
+else if(sessionStorage.getItem(12).length === 0){
+     sessionStorage.setItem(12 , document.getElementById("ajt").value);
+     sessionStorage.setItem(13 , document.getElementById("ajt1").value);
+}
+else if(sessionStorage.getItem(14).length === 0){
+     sessionStorage.setItem(14 , document.getElementById("ajt").value);
+     sessionStorage.setItem(15 , document.getElementById("ajt1").value);
+}
+else if(sessionStorage.getItem(16).length === 0){
+     sessionStorage.setItem(16 , document.getElementById("ajt").value);
+     sessionStorage.setItem(17 , document.getElementById("ajt1").value);
+}
+else if(sessionStorage.getItem(18).length === 0){
+     sessionStorage.setItem(18 , document.getElementById("ajt").value);
+     sessionStorage.setItem(19 , document.getElementById("ajt1").value);
+}
+else {alert("Die Gruppe A ist voll")}
+}
+</script>
+     </head>
+
+
+
+    <body>
+    
+    <h1 style="font-family:cursive ;" align="center">Wortschatz</h1>
+    <font style="font-weight:800 ;" color="black" size="5"> Die Wiederholung ist der Schlüssel zum Auswendiglernen </font>
+    <br>
+    <br>
+    <hr>
+    <p style="font-weight:800 ;">Wenn Sie Übersetzer brauchen </p> 
+    <a href="https://www.arabdict.com/" target="_balnk"><img src="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/e9/76/e9/e976e99d-384c-0b59-e32f-11295db45117/source/512x512bb.jpg" alt="Übersetzer" width="5%"> </a> <br>
+    <hr>
+    <br>
+    <nav>
+     <ul>
+          <li class="tableauAjout"><a href="wort html.html">tableauAjout</a></li>
+          <li class="GroupA"><a href="questionsA.html">GruppeA</a></li>
+          <li class="GroupB"><a href="questionsB.html">GruppeB</a></li>
+          <li class="GroupC"><a href="questionsC.html">GruppeC</a></li>
+     </ul>
+    </nav>
+   <br>
+   <input id="ajt" class="inp" type"text" placeholder="Ein Wort hinzufügen">
+   <input id="ajt1" class="inp" type"text"  placeholder="Die Übersetzung hinzufügen">
+   <br>
+   
+   <button onClick="ajtfu()" id="button type "  type="submit">hinzufügen</button>
+   <br>
+   
+    
+   
+
+
+
+
+     </body>
+    
+
+</DOCTYPE>   
+</html>
