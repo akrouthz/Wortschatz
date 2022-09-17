@@ -9,7 +9,10 @@
    
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script>
-function ajtfu(){
+ if(k != 1){ 
+ for(var p = 0; p<=60; ++p){
+ sessionStorage.setItem(p , "");}}
+function ajtfu(){ var k = 1;
 if(sessionStorage.getItem(0).length === 0){
      sessionStorage.setItem(0 , document.getElementById("ajt").value);
      sessionStorage.setItem(1 , document.getElementById("ajt1").value);
