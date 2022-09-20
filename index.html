@@ -1,97 +1,81 @@
+<!DOCTYPE html>
 <html>
- <DOCTYPE html>
-    <html lang="en">
-         <head>
-         <meta charset="utf-8"/> 
-         <title>Wortschatz</title> 
-         <link rel="stylesheet" href="wort css.css">
-         <script src="wort js.js"> </script>   
-   
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script>
-function ajtfu(){
-if(sessionStorage.getItem(0).length === 0){
-     sessionStorage.setItem(0 , document.getElementById("ajt").value);
-     sessionStorage.setItem(1 , document.getElementById("ajt1").value);
-}
-else if(sessionStorage.getItem(2).length === 0){
-     sessionStorage.setItem(2 , document.getElementById("ajt").value);
-     sessionStorage.setItem(3 , document.getElementById("ajt1").value);
-}
-else if(sessionStorage.getItem(4).length === 0){
-     sessionStorage.setItem(4 , document.getElementById("ajt").value);
-     sessionStorage.setItem(5 , document.getElementById("ajt1").value);
-}
-else if(sessionStorage.getItem(6).length === 0){
-     sessionStorage.setItem(6 , document.getElementById("ajt").value);
-     sessionStorage.setItem(7 , document.getElementById("ajt1").value);
-}
-else if(sessionStorage.getItem(8).length === 0){
-     sessionStorage.setItem(8 , document.getElementById("ajt").value);
-     sessionStorage.setItem(9 , document.getElementById("ajt1").value);
-}
-else if(sessionStorage.getItem(10).length === 0){
-     sessionStorage.setItem(10 , document.getElementById("ajt").value);
-     sessionStorage.setItem(11 , document.getElementById("ajt1").value);
-}
-else if(sessionStorage.getItem(12).length === 0){
-     sessionStorage.setItem(12 , document.getElementById("ajt").value);
-     sessionStorage.setItem(13 , document.getElementById("ajt1").value);
-}
-else if(sessionStorage.getItem(14).length === 0){
-     sessionStorage.setItem(14 , document.getElementById("ajt").value);
-     sessionStorage.setItem(15 , document.getElementById("ajt1").value);
-}
-else if(sessionStorage.getItem(16).length === 0){
-     sessionStorage.setItem(16 , document.getElementById("ajt").value);
-     sessionStorage.setItem(17 , document.getElementById("ajt1").value);
-}
-else if(sessionStorage.getItem(18).length === 0){
-     sessionStorage.setItem(18 , document.getElementById("ajt").value);
-     sessionStorage.setItem(19 , document.getElementById("ajt1").value);
-}
-else {alert("Die Gruppe A ist voll")}
-}
-</script>
-     </head>
+  <head>
+    <meta charset="utf-8"/> 
+    <title>hören</title> 
+    <link rel="stylesheet" href="horencss.css">
+    <script src="horenjs.js"> </script> 
 
+  </head>
+     <body>
+        <div id="question">
+            <h2 id="tit">Übung 1:</h2>
+            <audio src="a1u1.mp3" controls></audio>
+    <h3>+Kommst du jetzt? <br>
+        -Ja, ich komme. <br>
+        <br>
+        +Wo wohnst du? <br>
+        -Ich wohne in <input id="mot1" class="inp" type"text"><div id="r1" class="r"></div><div id="f1" class="f"></div> <br>
+        <br>
+        +Wo wohnt ihr? <br>
+        -Wir wohnen in <input id="mot2" class="inp" type"text"><div id="r2" class="r"></div><div id="f2" class="f"></div> <br>
+        <br>
+        +Wo wohnt er? <br>
+        -Pedro? Er wohnt in <input id="mot3" class="inp" type"text"><div id="r3" class="r"></div><div id="f3" class="f"></div> <br>
+        +Frau Bergmann, wo wohnen Sie? <br>
+        -Ich wohne in <input id="mot4" class="inp" type"text"><div id="r4" class="r"></div><div id="f4" class="f"></div> <br>
+    </h3>
+<div id="bc">
+<button type="submit" id="btn" onclick="corr()">korrigieren</button>
+</div>
+<br>
 
+</div> 
+<br>
+<div id="question">
+    <h2 id="tit">Übung 2:</h2>
+    <audio src="a1u2.mp3" controls></audio>
+<h3>1. +Julian, wie ist deine Telefonnummer? <br>
+-Meine Telefonnumer ist <input id="u2mot1" class="inp" type"text"><div id="u2r1" class="r"></div><div id="u2f1" class="f"></div> <br>
+<br>
+2. +Wie ist die Telefonnummer von Michaela? <br>
+-Die Telefonnummer von Michaela? Das ist die <input id="u2mot2" class="inp" type"text"><div id="u2r2" class="r"></div><div id="u2f2" class="f"></div> <br>
+<br>
+3. +Sabine, hast du ein Handy <br>
+-Ja
+<br>
++Und wie ist deine Nummer? <br>
+- <input id="u2mot3" class="inp" type"text"><div id="u2r3" class="r"></div><div id="u2f3" class="f"></div> <br>
+4. +Wie ist die Handynummer von Jarek? <br>
+-Moment ... das ist die <input id="u2mot4" class="inp" type"text"><div id="u2r4" class="r"></div><div id="u2f4" class="f"></div> <br>
+</h3>
+<div id="bc">
+<button type="submit" id="btn" onclick="corr2()">korrigieren</button>
+</div>
+<br>
 
-    <body>
-    
-    <h1 style="font-family:cursive ;" align="center">Wortschatz</h1>
-    <font style="font-weight:800 ;" color="black" size="5"> Die Wiederholung ist der Schlüssel zum Auswendiglernen </font>
-    <br>
-    <br>
-    <hr>
-    <p style="font-weight:800 ;">Wenn Sie Übersetzer brauchen </p> 
-    <a href="https://www.arabdict.com/" target="_balnk"><img src="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/e9/76/e9/e976e99d-384c-0b59-e32f-11295db45117/source/512x512bb.jpg" alt="Übersetzer" width="5%"> </a> <br>
-    <hr>
-    <br>
-    <nav>
-     <ul>
-          <li class="tableauAjout"><a href="index.html">tableauAjout</a></li>
-          <li class="GroupA"><a href="questionsA.html">GruppeA</a></li>
-          <li class="GroupB"><a href="questionsB.html">GruppeB</a></li>
-          <li class="GroupC"><a href="questionsC.html">GruppeC</a></li>
-     </ul>
-    </nav>
-   <br>
-   <input id="ajt" class="inp" type"text" placeholder="Ein Wort hinzufügen">
-   <input id="ajt1" class="inp" type"text"  placeholder="Die Übersetzung hinzufügen">
-   <br>
-   
-   <button onClick="ajtfu()" id="button type "  type="submit">hinzufügen</button>
-   <br>
-   
-    
-   
+</div> 
+<div id="question">
+    <h2 id="tit">Übung 3:</h2>
+    <audio src="a1u3.mp3" controls></audio>
+<h3>-Können Sie das bitte <input id="u3mot1" class="inp" type"text">?<div id="u3r1" class="r"></div><div id="u3f1" class="f"></div> <br>
+<br>
+-<input id="u3mot2" class="inp" type"text">,kannst du das bitte <input id="u3mot3" class="inp" type"text"> <div id="u3r2" class="r"></div><div id="u3f2" class="f"></div><div id="u3r3" class="r"></div><div id="u3f3" class="f"></div> <br> <br>
+<br>
+-Kannst du das bitte <input id="u3mot4" class="inp" type"text"><div id="u3r4" class="r"></div><div id="u3f4" class="f"></div> <br>
+Wie heißt das auf Deutsch?
+<br>
+
+</h3>
+<div id="bc">
+<button type="submit" id="btn" onclick="corr3()">korrigieren</button>
+</div>
+<br>
+
+</div> 
 
 
 
 
      </body>
-    
-
-</DOCTYPE>   
 </html>
