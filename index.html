@@ -1,81 +1,140 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8"/> 
     <title>hören</title> 
-    <link rel="stylesheet" href="horencss.css">
-    <script src="horenjs.js"> </script> 
+    <style>
+        body{
+            background-image: url("backg.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .menu{
+            
+        margin-top: 300px;
+        width: 538px;
+        height: 300px;
+        margin-right: auto;
+        margin-left: auto;
+       
 
-  </head>
-     <body>
-        <div id="question">
-            <h2 id="tit">Übung 1:</h2>
-            <audio src="a1u1.mp3" controls></audio>
-    <h3>+Kommst du jetzt? <br>
-        -Ja, ich komme. <br>
-        <br>
-        +Wo wohnst du? <br>
-        -Ich wohne in <input id="mot1" class="inp" type"text"><div id="r1" class="r"></div><div id="f1" class="f"></div> <br>
-        <br>
-        +Wo wohnt ihr? <br>
-        -Wir wohnen in <input id="mot2" class="inp" type"text"><div id="r2" class="r"></div><div id="f2" class="f"></div> <br>
-        <br>
-        +Wo wohnt er? <br>
-        -Pedro? Er wohnt in <input id="mot3" class="inp" type"text"><div id="r3" class="r"></div><div id="f3" class="f"></div> <br>
-        +Frau Bergmann, wo wohnen Sie? <br>
-        -Ich wohne in <input id="mot4" class="inp" type"text"><div id="r4" class="r"></div><div id="f4" class="f"></div> <br>
-    </h3>
-<div id="bc">
-<button type="submit" id="btn" onclick="corr()">korrigieren</button>
+        }
+        .title{
+         background-color: black;
+         color: rgb(164, 241, 255); 
+         height: 50px;  
+         font-size: xx-large;
+         padding-top: 5px;
+         
+        }
+      
+        @media screen and (max-width:700px){
+            .title{font-size: large;
+
+            }
+            .menu{
+            
+            margin-top: 100px;
+            width: 60%;
+            margin-left: 19.68%;}
+        }
+        nav {
+            width: 100%;
+            weight: 250px;
+    border-color: rgba(0, 0, 0, 0.4);
+    
+    border-width: 5px;
+
+   
+ 
+        }
+        nav ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+ }
+ nav li{
+    list-style-type: none;
+    float: left;
+ }
+
+ nav a{
+    
+    text-decoration: none;
+   
+    color: black;
+   
+  
+    position: relative;
+        top:50px;
+        left: 0px;
+        right: 5px;
+        bottom: 5px;
+ }
+ .leicht{
+        width:50%;
+        height:125px;  
+        background-color: rgb(255, 255, 68); 
+        border: none;
+        font-size: xx-large;
+        font-family:cursive;
+       
+
+        
+        }
+        .mittel{
+        width:50%;
+        height:125px; 
+        background-color: rgb(47, 212, 47);
+        border: none;
+        font-size: xx-large;
+        font-family:cursive;
+        
+        }
+        .schwer{
+        width:50%;
+        height:125px;
+        background-color: rgb(0, 140, 255);  
+        border: none; 
+        font-size: xx-large;
+        font-family:cursive;
+    }
+        .knallhart{
+        width:50%;
+        height:125px;   
+        background-color: rgb(248, 71, 71);
+        border: none;
+        font-size: xx-large;
+        font-family:cursive;
+    }
+    .a{
+        padding: 50px 115px 32px 70px;
+        
+    }
+    .b{
+        padding: 50px 186px 32px 70px;
+        
+    }
+    .c{
+        padding: 50px 95px 32px 70px;
+        
+    }
+    .d{
+        padding: 50px 186px 32px 70px;
+    }
+    </style>
+
+</head>
+<body>
+<div class="menu">
+<center><div class="title">Schwierigkeitsgraden</div></center>
+<nav>
+<ul>
+<li class="leicht"><a class="a" href="horen.html" >leicht</a></li> <li class="mittel"><a class="b" href="a2.html" >mittel</a></li> <br>
+<li class="schwer"><a class="c" href="b1.html" >schwer</a></li> <li class="knallhart"><a class="d" href="b2.html" >knallhart</a></li>
+</ul>
+</nav>
 </div>
-<br>
 
-</div> 
-<br>
-<div id="question">
-    <h2 id="tit">Übung 2:</h2>
-    <audio src="a1u2.mp3" controls></audio>
-<h3>1. +Julian, wie ist deine Telefonnummer? <br>
--Meine Telefonnumer ist <input id="u2mot1" class="inp" type"text"><div id="u2r1" class="r"></div><div id="u2f1" class="f"></div> <br>
-<br>
-2. +Wie ist die Telefonnummer von Michaela? <br>
--Die Telefonnummer von Michaela? Das ist die <input id="u2mot2" class="inp" type"text"><div id="u2r2" class="r"></div><div id="u2f2" class="f"></div> <br>
-<br>
-3. +Sabine, hast du ein Handy <br>
--Ja
-<br>
-+Und wie ist deine Nummer? <br>
-- <input id="u2mot3" class="inp" type"text"><div id="u2r3" class="r"></div><div id="u2f3" class="f"></div> <br>
-4. +Wie ist die Handynummer von Jarek? <br>
--Moment ... das ist die <input id="u2mot4" class="inp" type"text"><div id="u2r4" class="r"></div><div id="u2f4" class="f"></div> <br>
-</h3>
-<div id="bc">
-<button type="submit" id="btn" onclick="corr2()">korrigieren</button>
-</div>
-<br>
-
-</div> 
-<div id="question">
-    <h2 id="tit">Übung 3:</h2>
-    <audio src="a1u3.mp3" controls></audio>
-<h3>-Können Sie das bitte <input id="u3mot1" class="inp" type"text">?<div id="u3r1" class="r"></div><div id="u3f1" class="f"></div> <br>
-<br>
--<input id="u3mot2" class="inp" type"text">,kannst du das bitte <input id="u3mot3" class="inp" type"text"> <div id="u3r2" class="r"></div><div id="u3f2" class="f"></div><div id="u3r3" class="r"></div><div id="u3f3" class="f"></div> <br> <br>
-<br>
--Kannst du das bitte <input id="u3mot4" class="inp" type"text"><div id="u3r4" class="r"></div><div id="u3f4" class="f"></div> <br>
-Wie heißt das auf Deutsch?
-<br>
-
-</h3>
-<div id="bc">
-<button type="submit" id="btn" onclick="corr3()">korrigieren</button>
-</div>
-<br>
-
-</div> 
-
-
-
-
-     </body>
+</body>
 </html>
